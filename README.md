@@ -2,7 +2,7 @@
 
 Juring 이미지로 만든 웹 기반 직소 퍼즐 게임입니다.
 
-🔗 **플레이**: [mabako30.github.io/jigsaw_juring](https://mabako30.github.io/jigsaw_juring/)
+🔗 **플레이**: [mabako30.github.io/jigsaw_juring](https://mabako30.github.io/jigsaw_juring/?v=2)
 
 ---
 
