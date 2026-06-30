@@ -2,18 +2,22 @@
 
 Juring 이미지로 만든 웹 기반 직소 퍼즐 게임입니다.
 
-🔗 **플레이**: [mabako30.github.io/jigsaw_juring](https://mabako30.github.io/jigsaw_juring/?v=2)
+🔗 **플레이**: [mabako30.github.io/jigsaw_juring](https://mabako30.github.io/jigsaw_juring)
 
 ---
 
 ## 기능
 
 ### 게임 플레이
-- **64조각 (8×8)** 고정 직소 퍼즐
+- **64조각 (8×8)** 또는 **128조각 (16×8)** 선택 가능
 - 조각마다 랜덤 탭(볼록/오목) 생성 — 매판 다른 조각 모양
 - 트레이에서 조각 클릭 → 보드 빈칸 클릭으로 배치
 - 보드에 놓인 조각 클릭 → 트레이로 반환
 - 두 슬롯 간 조각 스왑 가능
+
+### 이미지 선택
+- `image1.png` / `image2.png` 두 가지 이미지 중 선택 가능
+- 메인 화면에서 시작 전 이미지 선택
 
 ### UI / 레이아웃
 - **상단 툴바** — 새 게임, 힌트, 치트키, 바탕색 선택, 진행률 바, 타이머
@@ -42,14 +46,25 @@ Juring 이미지로 만든 웹 기반 직소 퍼즐 게임입니다.
 
 - **HTML / CSS / JavaScript** (단일 파일)
 - Canvas API로 직소 조각 렌더링 (베지어 곡선 탭 모양)
-- 이미지 Base64 내장 (별도 서버 불필요)
+- 외부 이미지 파일 참조 (`image1.png`, `image2.png`)
 - GitHub Pages로 배포
+
+---
+
+## 파일 구조
+
+```
+index.html      — 게임 메인 파일
+image1.png      — 퍼즐 이미지 1
+image2.png      — 퍼즐 이미지 2
+README.md       — 이 파일
+```
 
 ---
 
 ## 로컬 실행
 
-별도 설치 없이 `index.html` 파일을 브라우저로 열면 바로 실행됩니다.
+`index.html`과 같은 폴더에 `image1.png`, `image2.png`를 함께 둔 상태에서 브라우저로 열면 실행됩니다.
 
 ```bash
 # 그냥 파일 열기
@@ -60,6 +75,6 @@ open index.html
 
 ## 배포
 
-GitHub Pages 사용. `main` 브랜치의 `index.html`이 자동 배포됩니다.
+GitHub Pages 사용. `main` 브랜치의 파일들이 자동 배포됩니다.
 
-업데이트 방법: `index.html` 파일을 레포에 다시 업로드하면 1~2분 내 자동 반영.
+업데이트 방법: `index.html` 또는 이미지 파일을 레포에 업로드하면 1~2분 내 자동 반영.
